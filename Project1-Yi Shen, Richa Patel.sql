@@ -46,27 +46,27 @@ primary key(CourseCode, StudentID),
 foreign key(CourseCode, SectionNo) references Offering(CourseCode, SectionNo));
 
 /*Section B*/
-load xml local infile 'C:/Users/yshen/Desktop/Coms363/UniversityXML/Person.xml' 
+load xml local infile 'C:/Users/rpatel/Desktop/Coms363/UniversityXML/Person.xml' 
 	into table Person 
 	rows identified by '<Person>';
 
-load xml local infile 'C:/Users/yshen/Desktop/Coms363/UniversityXML/Instructor.xml' 
+load xml local infile 'C:/Users/rpatel/Desktop/Coms363/UniversityXML/Instructor.xml' 
 	into table Instructor 
 	rows identified by '<Instructor>';
     
-load xml local infile 'C:/Users/yshen/Desktop/Coms363/UniversityXML/Student.xml' 
+load xml local infile 'C:/Users/rpatel/Desktop/Coms363/UniversityXML/Student.xml' 
 	into table Student 
 	rows identified by '<Student>';
     
-load xml local infile 'C:/Users/yshen/Desktop/Coms363/UniversityXML/Course.xml' 
+load xml local infile 'C:/Users/rpatel/Desktop/Coms363/UniversityXML/Course.xml' 
 	into table Course 
 	rows identified by '<Course>';
     
-load xml local infile 'C:/Users/yshen/Desktop/Coms363/UniversityXML/Offering.xml' 
+load xml local infile 'C:/Users/rpatel/Desktop/Coms363/UniversityXML/Offering.xml' 
 	into table Offering
 	rows identified by '<Offering>';
     
-load xml local infile 'C:/Users/yshen/Desktop/Coms363/UniversityXML/Enrollment.xml' 
+load xml local infile 'C:/Users/rpatel/Desktop/Coms363/UniversityXML/Enrollment.xml' 
 	into table Enrollment 
 	rows identified by '<Enrollment>';
     
